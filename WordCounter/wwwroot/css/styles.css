@@ -3,10 +3,14 @@ body {
   font-family: 'Special Elite', cursive;
   font-size: 30px;
 }
-
 ul {
   list-style-type: none;
 }
 h1{
   text-align: center;
 }
+.repeat,#repeat {
+text-align: center;
+color: brown;
+}
+

@@ -15,9 +15,7 @@ namespace WordCounter.Controllers
         [HttpPost("/counter")]
         public ActionResult Result()
         {   
-            string wordHolder = Request.Form["input"];
-            string sentenceHolder = Request.Form["inputList"];
-            WordChecker newWord = new WordChecker(wordHolder,sentenceHolder);
+            WordChecker newWord = new WordChecker(Request.Form["input"],Request.Form["inputList"]);
             return View("Result",newWord);
 
         }
