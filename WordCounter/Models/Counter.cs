@@ -13,9 +13,16 @@ namespace WordCounter.Models
         public WordChecker(string firstInput,string firstInputList)
         {
             _input = firstInput.ToLower();
-            List<string> result = firstInputList.Split(' ').ToList();
-            _inputList = result;
-
+            if(firstInputList != "")
+            {
+                List<string> result = firstInputList.Split(' ').ToList();
+                _inputList = result;
+            }
+            else
+            {
+                _inputList = new List<string>{};
+            }
+         
         }
         public string GetInput()
         {
