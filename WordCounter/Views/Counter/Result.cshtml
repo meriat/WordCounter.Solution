@@ -1,0 +1,10 @@
+<h1>this is result</h1>
+<p>@Model.GetInput()</p>
+<ul>
+@foreach (var list in @Model.GetList())
+{
+<li>@list</li>
+}
+</ul>
+<p>@Model.RepeatCounter()</p>
+

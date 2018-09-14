@@ -10,11 +10,20 @@ namespace WordCounter.Models
         private string _input;
         private List <string> _inputList;
         //add constructor
-        public WordChecker(string input, List <string> inputList)
+        public WordChecker(string firstInput,string firstInputList)
         {
-            _input = input.ToLower();
-            _inputList = inputList;
+            _input = firstInput.ToLower();
+            List<string> result = firstInputList.Split(' ').ToList();
+            _inputList = result;
 
+        }
+        public string GetInput()
+        {
+            return _input;
+        }
+        public List<string> GetList()
+        {
+            return _inputList;
         }
 
         public bool IsWordEmpty()
