@@ -1,10 +1,19 @@
-<h1>this is result</h1>
+@{
+  Layout = "_Layout";
+}
+<div class="container">
+<h1 class="jumbotron">Woohoo!</h1>
+<p>This is the input word :: </p>
 <p>@Model.GetInput()</p>
+<p>List of words in the sentence</p>
 <ul>
 @foreach (var list in @Model.GetList())
 {
 <li>@list</li>
 }
 </ul>
+<p>Number of words in the list that matches the input word:</p>
 <p>@Model.RepeatCounter()</p>
+<a href="/counter">Back to game</a>
 
+</div>

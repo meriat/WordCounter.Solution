@@ -1,7 +1,12 @@
 body {
-  background-color: #DEDEDE;
+  background-color: #bafffa;
+  font-family: 'Special Elite', cursive;
+  font-size: 30px;
 }
 
 ul {
   list-style-type: none;
+}
+h1{
+  text-align: center;
 }

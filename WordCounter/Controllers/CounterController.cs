@@ -17,9 +17,7 @@ namespace WordCounter.Controllers
         {   
             string wordHolder = Request.Form["input"];
             string sentenceHolder = Request.Form["inputList"];
-            // List <string> inputList = new List<string> {"hey","hello"};
             WordChecker newWord = new WordChecker(wordHolder,sentenceHolder);
-
             return View("Result",newWord);
 
         }

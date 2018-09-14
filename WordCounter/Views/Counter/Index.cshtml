@@ -1,11 +1,17 @@
-<h1>Have fun playing!</h1>
-<h3>Enter a word & a List of words</h3>
+@{
+  Layout = "_Layout";
+}
+<div class="container">
+<h1 class="jumbotron">Word counter helper is here!</h1>
+<h3>Enter a word & sentence</h3>
 <form action="/counter" method="post">
 <label for='input'>Enter a word</label>
-<input id='input' name='input' type='text'>
-
+<input id='input' name='input' type='text' class="form-control">
+<br>
 <form action="/counter" method="post">
-<label for='inputlist'>Enter a list of words</label>
-<input id='inputlist' name='inputlist' type='text'>
-<button type='submit'>Submit</button>
+<label for='inputlist'>Enter a sentence</label>
+<input id='inputlist' name='inputlist' type='text' class="form-control"><br>
+<button type='submit' class="btn btn-warning">Submit</button>
 </form>
+</div>
+
